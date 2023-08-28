@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Helvetica, Garamond, Helvetica;
+}
+
+/* Style the header */
+header {
+  background-color: rgb(190, 178, 70);
+  padding: 20px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 15%;
+  height: 300px; /* only for demonstration, should be removed */
+  background: LightGray;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 55%;
+  background-color: rgb(255, 255, 255);
+  height: 300px; /* only for demonstration, should be removed */
+}
+
+image {
+  float: left;
+  padding: 20px;
+  width: 30%;
+  background-color: rgb(63, 26, 26);
+  height: 300px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: rgb(190, 178, 70);
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
+<body>
+
+<header>
+  <h2>NCT DREAM</h2>
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <li><a href="#">Mark</a></li>
+      <li><a href="#">Renjun</a></li>
+      <li><a href="#">Jeno</a></li>
+      <li><a href="#">Haechan</a></li>
+      <li><a href="#">Jaemin</a></li>
+      <li><a href="#">Chenle</a></li>
+      <li><a href="#">Jisung</a></li>
+    </ul> 
+  </nav>
+  
+  <article>
+    <h1>Haechan</h1>
+    <p>Lee Dong-hyuck, known by his stage name Haechan, is a South Korean singer and dancer born in Seoul on June 6, 2000 (he later moved to Jeju Island with his family before becoming a trainee). He is the main vocalist and the lead dancer of NCT 127 and NCT Dream.</p>
+    <p> He attended the School of Performing Arts (SOPA), and has a younger sister and two younger brothers.</p>
+  </article>
+  
+  <image>
+    <h1></h1>
+  	<img src=https://assets.ayobandung.com/crop/0x0:0x0/750x500/webp/photo/2023/07/25/IMG_20230725_163423-2769403305.jpg alt="London" style="width:300px;height:200px;">
+  <image>
+  
+</section>
+
+<footer>
+  <p>Copyright @anisaambianii</p>
+</footer>
+
+</body>
+</html>
+
